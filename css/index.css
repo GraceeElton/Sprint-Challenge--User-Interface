@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -29,7 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+
+
 }
 ol, ul {
 	list-style: none;
@@ -66,6 +68,30 @@ p {
     line-height: 1.4;
 }
 
+
+/* CSS for the home page */
+
+
+
+.links {
+    display:flex; 
+    justify-content:space-evenly;
+    padding:2%;
+    max-width: 95%;
+    
+}
+
+a:link {
+   
+     text-decoration: none;
+}
+
+.lambda-logo {
+    padding-bottom: 2%;
+}
+
+
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -77,6 +103,7 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-top: 2%;
 }
 
 .top-content .text-container {
@@ -96,21 +123,58 @@ p {
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+     display: flex;
+     flex-wrap: wrap; 
+    justify-content: space-around;
+    margin:2%; 
+    color:white;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .box1 {
+            background-color: teal ;
+            padding:6%;
+            margin:1%
+        }
+
+        .box2 {
+            background-color: gold ;
+            padding:6%;
+            margin:1%
+        }.box3 {
+            background-color: cadetblue;
+            padding:6%;
+            margin:1%
+        }.box4 {
+            background-color: coral ;
+            padding:6%;
+            margin:1%
+        }.box5 {
+            background-color:crimson ;
+            padding:6%;
+            margin:1%
+        }.box6 {
+            background-color: forestgreen;
+            padding:6%;
+            margin:1%
+        }.box7 {
+            background-color:darkorchid;
+            padding:6%;
+            margin:1%
+        }.box8 {
+            background-color: hotpink ;
+            padding:6%;
+            margin:1%
+        }.box9 {
+            background-color: indigo;
+            padding:6%;
+            margin:1%
+        }.box10 {
+            background-color:dodgerblue ;
+            padding:6%;
+            margin:1%
+        }
+
+
 
 .bottom-content {
     display: flex;
@@ -144,3 +208,47 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* CSS for about page. */
+
+.intro {
+    border-bottom: 2px dotted black;
+    margin:1%;
+    padding-bottom:2%;
+}
+
+.service-options{
+	display:flex;
+	flex-wrap: wrap;
+	
+}
+
+.item {
+	border-bottom: 2px dotted black;
+	display:flex;
+	flex-direction:column;
+	width:50%;
+	margin:2% 0%;
+	justify-content: space-evenly;
+	padding:10px;
+}
+
+button {
+    margin-top:10px;
+    padding:3%;
+    align-self:flex-start;
+    width:50%;
+    border: 3px solid black;
+    border-radius: 15px;
+    height:80%;
+    font-size: 20px;
+}
+
+.item img {
+    padding-bottom: 2%;
+}
+.Outro {
+    padding:5%;
+}
+
